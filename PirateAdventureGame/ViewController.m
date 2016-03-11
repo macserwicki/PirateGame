@@ -20,7 +20,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *storyLbl;
 
-@property (weak, nonatomic) IBOutlet UIButton *ActionBtnLbl;
+@property (weak, nonatomic) IBOutlet UIButton *actionBtnLbl;
 
 @property (weak, nonatomic) IBOutlet UIImageView *itemImgView;
 
@@ -47,5 +47,30 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (IBAction)actionBtnPressed:(UIButton *)sender {
+}
+
+
+- (IBAction)northBtnPressed:(UIButton *)sender {
+}
+
+
+- (IBAction)eastBtnPressed:(UIButton *)sender {
+}
+
+
+- (IBAction)southBtnPressed:(UIButton *)sender {
+}
+
+
+- (IBAction)westBtnPressed:(UIButton *)sender {
+}
+
+- (IBAction)resetBtnPressed:(UIButton *)sender {
+}
+
+
 
 @end

@@ -90,17 +90,12 @@
                                     <rect key="frame" x="22" y="124" width="354" height="136"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yco-TK-ECb">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="0.64897629310000005" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <state key="normal" title="ACTION">
-                                    <color key="titleColor" red="0.76470588240000004" green="0.073125621510000002" blue="0.061183639230000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helmet" translatesAutoresizingMaskIntoConstraints="NO" id="SJu-0D-nEl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="45" y="281" width="143" height="55"/>
+                                    <rect key="frame" x="258" y="281" width="55" height="55"/>
                                 </variation>
-                            </button>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compassRose" translatesAutoresizingMaskIntoConstraints="NO" id="uBe-FQ-Ggc">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -117,6 +112,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="180" y="386" width="40" height="40"/>
                                 </variation>
+                                <connections>
+                                    <action selector="northBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BYV-7x-xZx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lq-Z9-jo0">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -128,6 +126,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="292" y="498" width="40" height="40"/>
                                 </variation>
+                                <connections>
+                                    <action selector="eastBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Uq-ey-6b7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks1-xw-GAz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -139,6 +140,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="69" y="498" width="40" height="40"/>
                                 </variation>
+                                <connections>
+                                    <action selector="westBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5j-TU-P8K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRp-EZ-IU7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -150,6 +154,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="177" y="609" width="40" height="40"/>
                                 </variation>
+                                <connections>
+                                    <action selector="southBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UgQ-Za-mJ1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqA-Gp-FJd">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -161,13 +168,24 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="306" y="740" width="74" height="40"/>
                                 </variation>
+                                <connections>
+                                    <action selector="resetBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HT-T3-7pG"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helmet" translatesAutoresizingMaskIntoConstraints="NO" id="SJu-0D-nEl">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yco-TK-ECb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.64897629310000005" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <state key="normal" title="ACTION">
+                                    <color key="titleColor" red="0.76470588240000004" green="0.073125621510000002" blue="0.061183639230000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="258" y="281" width="55" height="55"/>
+                                    <rect key="frame" x="45" y="281" width="143" height="55"/>
                                 </variation>
-                            </imageView>
+                                <connections>
+                                    <action selector="actionBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHo-3O-iKf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88275240379999997" green="0.77676789709845007" blue="0.47634614068244746" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -190,14 +208,14 @@
                                 <exclude reference="B2U-Vq-0Zl"/>
                                 <exclude reference="UDa-Pv-gUN"/>
                                 <exclude reference="MmG-7o-z4L"/>
-                                <exclude reference="Yco-TK-ECb"/>
+                                <exclude reference="SJu-0D-nEl"/>
                                 <exclude reference="uBe-FQ-Ggc"/>
                                 <exclude reference="9eb-pe-0PR"/>
                                 <exclude reference="1lq-Z9-jo0"/>
                                 <exclude reference="ks1-xw-GAz"/>
                                 <exclude reference="RRp-EZ-IU7"/>
                                 <exclude reference="LqA-Gp-FJd"/>
-                                <exclude reference="SJu-0D-nEl"/>
+                                <exclude reference="Yco-TK-ECb"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2Og-07-ytR"/>
@@ -218,14 +236,14 @@
                                 <include reference="B2U-Vq-0Zl"/>
                                 <include reference="UDa-Pv-gUN"/>
                                 <include reference="MmG-7o-z4L"/>
-                                <include reference="Yco-TK-ECb"/>
+                                <include reference="SJu-0D-nEl"/>
                                 <include reference="uBe-FQ-Ggc"/>
                                 <include reference="9eb-pe-0PR"/>
                                 <include reference="1lq-Z9-jo0"/>
                                 <include reference="ks1-xw-GAz"/>
                                 <include reference="RRp-EZ-IU7"/>
                                 <include reference="LqA-Gp-FJd"/>
-                                <include reference="SJu-0D-nEl"/>
+                                <include reference="Yco-TK-ECb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2Og-07-ytR"/>
@@ -236,10 +254,10 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="ActionBtnLbl" destination="Yco-TK-ECb" id="pgJ-C8-TT9"/>
+                        <outlet property="actionBtnLbl" destination="Yco-TK-ECb" id="rK6-Ro-9Yu"/>
                         <outlet property="armorLbl" destination="UDa-Pv-gUN" id="8Om-IA-rXD"/>
                         <outlet property="damageLbl" destination="VwF-J7-Qbp" id="w00-yI-xe9"/>
-                        <outlet property="eastBtnLbl" destination="1lq-Z9-jo0" id="SLE-om-J7v"/>
+                        <outlet property="eastBtnLbl" destination="1lq-Z9-jo0" id="WkW-4m-kY8"/>
                         <outlet property="healthLbl" destination="8eS-ck-qFw" id="dtl-S1-zIJ"/>
                         <outlet property="itemImgView" destination="SJu-0D-nEl" id="lXF-JA-8FZ"/>
                         <outlet property="northBtnLbl" destination="9eb-pe-0PR" id="0MM-aS-Awm"/>

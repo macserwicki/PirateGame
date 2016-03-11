@@ -13,6 +13,13 @@
 		5257D4FC1C91407500593952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5257D4FA1C91407500593952 /* Main.storyboard */; };
 		5257D4FE1C91407500593952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5257D4FD1C91407500593952 /* Assets.xcassets */; };
 		5257D5011C91407500593952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5257D4FF1C91407500593952 /* LaunchScreen.storyboard */; };
+		526E2CD51C92998B00FBB0D2 /* Armor.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CD41C92998B00FBB0D2 /* Armor.m */; };
+		526E2CE11C929ACB00FBB0D2 /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CE01C929ACB00FBB0D2 /* Weapon.m */; };
+		526E2CE41C929CB800FBB0D2 /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CE31C929CB800FBB0D2 /* Creature.m */; };
+		526E2CE71C929CF700FBB0D2 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CE61C929CF700FBB0D2 /* Character.m */; };
+		526E2CEA1C929D0300FBB0D2 /* Boss.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CE91C929D0300FBB0D2 /* Boss.m */; };
+		526E2CED1C929DA000FBB0D2 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CEC1C929DA000FBB0D2 /* Tile.m */; };
+		526E2CF01C934AAF00FBB0D2 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CEF1C934AAF00FBB0D2 /* Factory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,20 @@
 		5257D4FD1C91407500593952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5257D5001C91407500593952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5257D5021C91407500593952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526E2CD31C92998B00FBB0D2 /* Armor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Armor.h; sourceTree = "<group>"; };
+		526E2CD41C92998B00FBB0D2 /* Armor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Armor.m; sourceTree = "<group>"; };
+		526E2CDF1C929ACB00FBB0D2 /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		526E2CE01C929ACB00FBB0D2 /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
+		526E2CE21C929CB800FBB0D2 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Creature.h; path = ../Creature.h; sourceTree = "<group>"; };
+		526E2CE31C929CB800FBB0D2 /* Creature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Creature.m; path = ../Creature.m; sourceTree = "<group>"; };
+		526E2CE51C929CF700FBB0D2 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Character.h; path = ../Character.h; sourceTree = "<group>"; };
+		526E2CE61C929CF700FBB0D2 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Character.m; path = ../Character.m; sourceTree = "<group>"; };
+		526E2CE81C929D0300FBB0D2 /* Boss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Boss.h; path = ../Boss.h; sourceTree = "<group>"; };
+		526E2CE91C929D0300FBB0D2 /* Boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Boss.m; path = ../Boss.m; sourceTree = "<group>"; };
+		526E2CEB1C929DA000FBB0D2 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		526E2CEC1C929DA000FBB0D2 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		526E2CEE1C934AAF00FBB0D2 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		526E2CEF1C934AAF00FBB0D2 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +79,11 @@
 		5257D4F01C91407500593952 /* PirateAdventureGame */ = {
 			isa = PBXGroup;
 			children = (
+				526E2CD81C92999E00FBB0D2 /* Model */,
+				526E2CD71C92999800FBB0D2 /* View */,
+				526E2CD61C92999300FBB0D2 /* Controller */,
 				5257D4F41C91407500593952 /* AppDelegate.h */,
 				5257D4F51C91407500593952 /* AppDelegate.m */,
-				5257D4F71C91407500593952 /* ViewController.h */,
-				5257D4F81C91407500593952 /* ViewController.m */,
 				5257D4FA1C91407500593952 /* Main.storyboard */,
 				5257D4FD1C91407500593952 /* Assets.xcassets */,
 				5257D4FF1C91407500593952 /* LaunchScreen.storyboard */,
@@ -77,6 +99,43 @@
 				5257D4F21C91407500593952 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		526E2CD61C92999300FBB0D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5257D4F71C91407500593952 /* ViewController.h */,
+				5257D4F81C91407500593952 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		526E2CD71C92999800FBB0D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		526E2CD81C92999E00FBB0D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				526E2CEE1C934AAF00FBB0D2 /* Factory.h */,
+				526E2CEF1C934AAF00FBB0D2 /* Factory.m */,
+				526E2CD31C92998B00FBB0D2 /* Armor.h */,
+				526E2CD41C92998B00FBB0D2 /* Armor.m */,
+				526E2CDF1C929ACB00FBB0D2 /* Weapon.h */,
+				526E2CE01C929ACB00FBB0D2 /* Weapon.m */,
+				526E2CEB1C929DA000FBB0D2 /* Tile.h */,
+				526E2CEC1C929DA000FBB0D2 /* Tile.m */,
+				526E2CE21C929CB800FBB0D2 /* Creature.h */,
+				526E2CE31C929CB800FBB0D2 /* Creature.m */,
+				526E2CE51C929CF700FBB0D2 /* Character.h */,
+				526E2CE61C929CF700FBB0D2 /* Character.m */,
+				526E2CE81C929D0300FBB0D2 /* Boss.h */,
+				526E2CE91C929D0300FBB0D2 /* Boss.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +208,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526E2CF01C934AAF00FBB0D2 /* Factory.m in Sources */,
+				526E2CEA1C929D0300FBB0D2 /* Boss.m in Sources */,
+				526E2CED1C929DA000FBB0D2 /* Tile.m in Sources */,
+				526E2CE11C929ACB00FBB0D2 /* Weapon.m in Sources */,
+				526E2CE71C929CF700FBB0D2 /* Character.m in Sources */,
 				5257D4F91C91407500593952 /* ViewController.m in Sources */,
 				5257D4F61C91407500593952 /* AppDelegate.m in Sources */,
 				5257D4F31C91407500593952 /* main.m in Sources */,
+				526E2CD51C92998B00FBB0D2 /* Armor.m in Sources */,
+				526E2CE41C929CB800FBB0D2 /* Creature.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +364,7 @@
 				5257D5071C91407500593952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
