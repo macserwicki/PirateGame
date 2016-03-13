@@ -122,23 +122,33 @@
 
 - (IBAction)northBtnPressed:(UIButton *)sender {
     self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y + 1);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)eastBtnPressed:(UIButton *)sender {
      self.currentPoint = CGPointMake(self.currentPoint.x + 1, self.currentPoint.y);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)southBtnPressed:(UIButton *)sender {
      self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y - 1);
+    [self updateButtons];
+    [self updateTile];
 }
 
 
 - (IBAction)westBtnPressed:(UIButton *)sender {
      self.currentPoint = CGPointMake(self.currentPoint.x - 1, self.currentPoint.y);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)resetBtnPressed:(UIButton *)sender {
     [self setupGame];
+    [self updateButtons];
+    [self updateTile];
 }
 
 

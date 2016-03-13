@@ -12,7 +12,7 @@
 
 -(BOOL)tileExistsATPoint:(CGPoint) point forTiles: (NSArray *)tileArray {
     
-    if (point.y >= 0 && point.x >= 0 && point.y < [tileArray count] && point.x <= [[tileArray objectAtIndex:point.x] count]) {
+    if (point.y >= 0 && point.x >= 0 && point.x < [tileArray count] && point.y < [[tileArray objectAtIndex:point.x] count]) {
         return YES;
     }
     return NO;

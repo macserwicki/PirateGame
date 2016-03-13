@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-aC-zmm">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2v-CQ-fFD">
                                 <rect key="frame" x="0.0" y="0.0" width="396" height="350"/>
                                 <subviews>
@@ -128,6 +125,22 @@
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helmet" translatesAutoresizingMaskIntoConstraints="NO" id="SJu-0D-nEl">
                                                 <rect key="frame" x="233" y="20" width="55" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="49" id="JjK-AB-IfK"/>
+                                                    <constraint firstAttribute="width" constant="180" id="f3Q-Id-ru5"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="JjK-AB-IfK"/>
+                                                        <exclude reference="f3Q-Id-ru5"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="JjK-AB-IfK"/>
+                                                        <include reference="f3Q-Id-ru5"/>
+                                                    </mask>
+                                                </variation>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -235,6 +248,9 @@
                                     <action selector="resetBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HT-T3-7pG"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-aC-zmm">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.88275240379999997" green="0.77676789709845007" blue="0.47634614068244746" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -263,13 +279,13 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="SmH-aC-zmm"/>
                                 <exclude reference="uBe-FQ-Ggc"/>
                                 <exclude reference="9eb-pe-0PR"/>
                                 <exclude reference="1lq-Z9-jo0"/>
                                 <exclude reference="ks1-xw-GAz"/>
                                 <exclude reference="RRp-EZ-IU7"/>
                                 <exclude reference="LqA-Gp-FJd"/>
+                                <exclude reference="SmH-aC-zmm"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2Og-07-ytR"/>
@@ -296,13 +312,13 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="SmH-aC-zmm"/>
                                 <include reference="uBe-FQ-Ggc"/>
                                 <include reference="9eb-pe-0PR"/>
                                 <include reference="1lq-Z9-jo0"/>
                                 <include reference="ks1-xw-GAz"/>
                                 <include reference="RRp-EZ-IU7"/>
                                 <include reference="LqA-Gp-FJd"/>
+                                <include reference="SmH-aC-zmm"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2Og-07-ytR"/>
