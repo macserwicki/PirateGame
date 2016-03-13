@@ -12,6 +12,8 @@
 
 @interface Factory : NSObject
 
++(NSArray *)createTiles;
+
 +(Boss *)createABoss;
 
 +(Character *)createCharacter;

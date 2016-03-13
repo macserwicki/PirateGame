@@ -13,6 +13,7 @@
 
 @interface Tile : NSObject
 
+//Will update these components.
 @property (strong, nonatomic) NSString *story;
 @property (strong, nonatomic) UIImage *itemImg;
 @property (strong, nonatomic) NSString *actionBtnName;
