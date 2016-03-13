@@ -15,4 +15,6 @@
 @property (strong, nonatomic) Armor *armor;
 @property (strong, nonatomic) Weapon *weapon;
 
+-(void) calculateAttributesForArmor: (Armor *)armorName withWeapon:(Weapon *)weaponName andHealthEffect:(int)healthEffect;
+
 @end
