@@ -110,13 +110,7 @@
     [self.character calculateAttributesForArmor: self.character.armor withWeapon: self.character.weapon andHealthEffect:0];
     [self updateTile];
     [self updateButtons];
-   // self.weaponLbl.text = @"Fists";
     
-//Accesses instance var directly. Avoids GET and SET.
-//    _tiles =  [Factory createTiles];
-//    _character = [Factory createCharacter];
-//    _boss = [Factory createABoss];
-//    _currentPoint = CGPointMake(0, 0);
 
 }
 
@@ -128,6 +122,8 @@
         [self showAlertWithTextForHeader:@"You Win!" withMessage: @"You defeated the evil chicken!"];
     } else {
         [self showAlertWithTextForHeader:@"Defeat" withMessage:@"You died. Reset the game."];
+        self.westBtnLbl.enabled = NO;
+        self.southBtnLbl.enabled = NO;
     }
 }
 
@@ -185,6 +181,8 @@
     self.character = nil;
     self.boss = nil;
     self.tiles = nil;
+    self.westBtnLbl.enabled = YES;
+    self.southBtnLbl.enabled = YES;
     [self setupGame];
 
 }
