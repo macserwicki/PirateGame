@@ -14,6 +14,7 @@
 		5257D4FE1C91407500593952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5257D4FD1C91407500593952 /* Assets.xcassets */; };
 		5257D5011C91407500593952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5257D4FF1C91407500593952 /* LaunchScreen.storyboard */; };
 		525E02EF1C96062800EA5E18 /* TileExistanceLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E02EE1C96062800EA5E18 /* TileExistanceLogic.m */; };
+		525E02F21C961DA300EA5E18 /* BossFightLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E02F11C961DA300EA5E18 /* BossFightLogic.m */; };
 		526E2CD51C92998B00FBB0D2 /* Armor.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CD41C92998B00FBB0D2 /* Armor.m */; };
 		526E2CE11C929ACB00FBB0D2 /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CE01C929ACB00FBB0D2 /* Weapon.m */; };
 		526E2CE41C929CB800FBB0D2 /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E2CE31C929CB800FBB0D2 /* Creature.m */; };
@@ -36,6 +37,8 @@
 		5257D5021C91407500593952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525E02ED1C96062800EA5E18 /* TileExistanceLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileExistanceLogic.h; sourceTree = "<group>"; };
 		525E02EE1C96062800EA5E18 /* TileExistanceLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileExistanceLogic.m; sourceTree = "<group>"; };
+		525E02F01C961DA300EA5E18 /* BossFightLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BossFightLogic.h; sourceTree = "<group>"; };
+		525E02F11C961DA300EA5E18 /* BossFightLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BossFightLogic.m; sourceTree = "<group>"; };
 		526E2CD31C92998B00FBB0D2 /* Armor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Armor.h; sourceTree = "<group>"; };
 		526E2CD41C92998B00FBB0D2 /* Armor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Armor.m; sourceTree = "<group>"; };
 		526E2CDF1C929ACB00FBB0D2 /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
@@ -132,6 +135,24 @@
 			name = "Data Models";
 			sourceTree = "<group>";
 		};
+		525E02F31C961DFF00EA5E18 /* Game Logic */ = {
+			isa = PBXGroup;
+			children = (
+				525E02F01C961DA300EA5E18 /* BossFightLogic.h */,
+				525E02F11C961DA300EA5E18 /* BossFightLogic.m */,
+			);
+			name = "Game Logic";
+			sourceTree = "<group>";
+		};
+		525E02F41C961E0B00EA5E18 /* UILogic */ = {
+			isa = PBXGroup;
+			children = (
+				525E02ED1C96062800EA5E18 /* TileExistanceLogic.h */,
+				525E02EE1C96062800EA5E18 /* TileExistanceLogic.m */,
+			);
+			name = UILogic;
+			sourceTree = "<group>";
+		};
 		526E2CD61C92999300FBB0D2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +165,7 @@
 		526E2CD71C92999800FBB0D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				525E02ED1C96062800EA5E18 /* TileExistanceLogic.h */,
-				525E02EE1C96062800EA5E18 /* TileExistanceLogic.m */,
+				525E02F41C961E0B00EA5E18 /* UILogic */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -153,6 +173,7 @@
 		526E2CD81C92999E00FBB0D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				525E02F31C961DFF00EA5E18 /* Game Logic */,
 				525E02EB1C96043300EA5E18 /* Data Models */,
 				525E02EA1C96042100EA5E18 /* Data */,
 			);
@@ -235,6 +256,7 @@
 				526E2CE11C929ACB00FBB0D2 /* Weapon.m in Sources */,
 				526E2CE71C929CF700FBB0D2 /* Character.m in Sources */,
 				5257D4F91C91407500593952 /* ViewController.m in Sources */,
+				525E02F21C961DA300EA5E18 /* BossFightLogic.m in Sources */,
 				5257D4F61C91407500593952 /* AppDelegate.m in Sources */,
 				5257D4F31C91407500593952 /* main.m in Sources */,
 				525E02EF1C96062800EA5E18 /* TileExistanceLogic.m in Sources */,

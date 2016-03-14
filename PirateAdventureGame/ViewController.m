@@ -12,14 +12,17 @@
 #import "Factory.h"
 #import "Tile.h"
 #import "TileExistanceLogic.h"
+#import "BossFightLogic.h"
 
-@interface ViewController ()
+@interface ViewController () <BossFightLogicDelegate>
 
 @property (strong, nonatomic) NSArray *tiles;
 @property (strong, nonatomic) Character *character;
 @property (strong, nonatomic) Boss *boss;
 
 @property (strong, nonatomic) TileExistanceLogic *tileExistance;
+@property (strong, nonatomic) BossFightLogic *bossFightLogic;
+
 
 //CGPoint holds X and Y Values
 @property (nonatomic) CGPoint currentPoint;
@@ -49,12 +52,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupGame];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 
 - (void) viewWillAppear:(BOOL)animated {
-    [self setupGame];
 }
 
 //MARK: Update Tiles and Buttons
@@ -92,18 +96,21 @@
 - (void) setupGame {
     
 //Calls GET and SET.
-    self.tiles =  [Factory createTiles];
     self.character = [Factory createCharacter];
+    self.tiles =  [Factory createTiles];
     self.boss = [Factory createABoss];
 
     self.currentPoint = CGPointMake(0, 0);
     
     self.tileExistance = [[TileExistanceLogic alloc] init];
+    self.bossFightLogic = [[BossFightLogic alloc] init];
+    self.bossFightLogic.bossFightDelegate = self;
     
     //Starting Point
-    [self.character calculateAttributesForArmor:nil withWeapon:nil andHealthEffect:0];
+    [self.character calculateAttributesForArmor: self.character.armor withWeapon: self.character.weapon andHealthEffect:0];
     [self updateTile];
     [self updateButtons];
+   // self.weaponLbl.text = @"Fists";
     
 //Accesses instance var directly. Avoids GET and SET.
 //    _tiles =  [Factory createTiles];
@@ -113,11 +120,40 @@
 
 }
 
+-(void)playDidWin:(BOOL)playerWon {
+    if (playerWon == YES) {
 
+
+        
+        [self showAlertWithTextForHeader:@"You Win!" withMessage: @"You defeated the evil chicken!"];
+    } else {
+        [self showAlertWithTextForHeader:@"Defeat" withMessage:@"You died. Reset the game."];
+    }
+}
+
+-(void)showAlertWithTextForHeader: (NSString*) title withMessage: (NSString *) message {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle: UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:action];
+    [self presentViewController:alert animated:true completion:nil];
+}
 
 //MARK: Buttons
 
 - (IBAction)actionBtnPressed:(UIButton *)sender {
+    
+    //If at this tile, then we're fighting the boss.
+    if (self.currentPoint.x == 3 && self.currentPoint.y == 2) {
+        [self.bossFightLogic declareWinnerForCharacter:self.character andBoss:self.boss];
+    }
+    
+    //Accessing Tile Data from Arrays
+    Tile *tile = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
+    //Update Character Stats
+    [self.character calculateAttributesForArmor:tile.armor withWeapon:tile.weapon andHealthEffect:tile.healthEffect];
+    [self updateTile];
+    self.actionBtnLbl.enabled = NO;
+    
 }
 
 - (IBAction)northBtnPressed:(UIButton *)sender {
@@ -146,9 +182,11 @@
 }
 
 - (IBAction)resetBtnPressed:(UIButton *)sender {
+    self.character = nil;
+    self.boss = nil;
+    self.tiles = nil;
     [self setupGame];
-    [self updateButtons];
-    [self updateTile];
+
 }
 
 

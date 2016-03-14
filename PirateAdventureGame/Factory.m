@@ -32,6 +32,7 @@
     Armor *armor2 = [[Armor alloc] init];
     armor2.name = @"Steel Armor";
     armor2.health = 8;
+    tile2.actionBtnName = @"Take the Armor!";
     tile2.armor = armor2;
     tile2. healthEffect = 0;
     
@@ -162,6 +163,8 @@
     
     Weapon *weapon = [[Weapon alloc] init];
     weapon.name = @"Fists";
+    weapon.damage = 0;
+    character.weapon = weapon;
     character.damage = 0;
     
     return character;

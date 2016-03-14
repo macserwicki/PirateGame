@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Boss.h"
+#import "Character.h"
 
 @interface TileExistanceLogic : NSObject
 
 -(BOOL)tileExistsATPoint:(CGPoint) point forTiles: (NSArray *)tileArray;
+
 
 @end
