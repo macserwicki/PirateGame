@@ -134,7 +134,7 @@
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="24" width="220" height="32"/>
+                                                    <rect key="frame" x="0.0" y="29" width="220" height="32"/>
                                                     <mask key="constraints">
                                                         <include reference="IGP-a3-zHr"/>
                                                     </mask>
@@ -158,7 +158,7 @@
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="220" y="10" width="140" height="60"/>
+                                                    <rect key="frame" x="220" y="15" width="140" height="60"/>
                                                     <mask key="constraints">
                                                         <include reference="JjK-AB-IfK"/>
                                                         <exclude reference="f3Q-Id-ru5"/>
@@ -167,7 +167,9 @@
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="SJu-0D-nEl" firstAttribute="top" secondItem="Vj4-KF-Ffn" secondAttribute="top" constant="10" id="Pzv-FQ-k9n"/>
+                                            <constraint firstItem="SJu-0D-nEl" firstAttribute="top" secondItem="Vj4-KF-Ffn" secondAttribute="top" constant="10" id="Pzv-FQ-k9n">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                            </constraint>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -175,7 +177,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="222" width="360" height="80"/>
+                                            <rect key="frame" x="0.0" y="222" width="360" height="90"/>
                                             <mask key="constraints">
                                                 <include reference="Pzv-FQ-k9n"/>
                                             </mask>
@@ -201,7 +203,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical" misplaced="YES">
-                                    <rect key="frame" x="20" y="35" width="360" height="302"/>
+                                    <rect key="frame" x="20" y="35" width="360" height="312"/>
                                     <mask key="constraints">
                                         <exclude reference="nME-7P-CKU"/>
                                         <include reference="4z9-vg-EPG"/>
