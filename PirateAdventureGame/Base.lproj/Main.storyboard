@@ -98,7 +98,6 @@
                                             <constraint firstAttribute="width" constant="230" id="mc1-MW-9kX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.53631810899999999" green="0.25092971850000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -133,8 +132,7 @@
                                                         <exclude reference="IGP-a3-zHr"/>
                                                     </mask>
                                                 </variation>
-                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="29" width="220" height="32"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
                                                     <mask key="constraints">
                                                         <include reference="IGP-a3-zHr"/>
                                                     </mask>
@@ -157,8 +155,7 @@
                                                         <exclude reference="f3Q-Id-ru5"/>
                                                     </mask>
                                                 </variation>
-                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="220" y="15" width="140" height="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
                                                     <mask key="constraints">
                                                         <include reference="JjK-AB-IfK"/>
                                                         <exclude reference="f3Q-Id-ru5"/>
@@ -176,8 +173,7 @@
                                                 <exclude reference="Pzv-FQ-k9n"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="222" width="360" height="90"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="Pzv-FQ-k9n"/>
                                             </mask>
@@ -202,8 +198,7 @@
                                         <exclude reference="gWS-dC-yLA"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical" misplaced="YES">
-                                    <rect key="frame" x="20" y="35" width="360" height="312"/>
+                                <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical">
                                     <mask key="constraints">
                                         <exclude reference="nME-7P-CKU"/>
                                         <include reference="4z9-vg-EPG"/>
