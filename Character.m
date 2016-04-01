@@ -13,7 +13,7 @@
 -(void) calculateAttributesForArmor: (Armor *)armorName withWeapon:(Weapon *)weaponName andHealthEffect:(int)healthEffect {
     
     if (armorName != nil) {
-        //Remove old armor, and put on new armor. Change health values.
+        //Removes old armor, and puts on new armor. Change health values.
         self.health = self.health - self.armor.health + armorName.health;
         self.armor = armorName;
     }

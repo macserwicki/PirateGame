@@ -16,7 +16,6 @@
     
     Tile *tile1 = [[Tile alloc] init];
     
-    //Custom Initializer?
     tile1.story = @"As the mightiest heorine in these parts of our land, we need you to underatke a perlious journey to defeat the Mega Boss threat. How exciting - here is a rusty sword to get you started!";
     tile1.itemImg = [UIImage imageNamed:@"sword"];
     Weapon *bluntedSword = [[Weapon alloc] init];

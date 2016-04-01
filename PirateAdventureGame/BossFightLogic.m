@@ -23,6 +23,7 @@
             break;
         } else if (boss.health <= 0) {
             //victory;
+            //player own;
             [self.bossFightDelegate playDidWin:YES];
             break;
         }
